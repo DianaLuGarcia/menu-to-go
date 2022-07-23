@@ -8,13 +8,16 @@ function addToCart(item) {
   disCart();
   disPrice();
 }
+const cartObj = {};
 
 function disCart(id) {
+
   let cartItems = document.getElementById("title");
   //clears items in cart when adding new (to avoid duplicates)
   cartItems.innerHTML = "";
 
   for (let i = 0; i < cart.length; i++) {
+   
     //**************places IMG + Title to cart on click*******************
     let item = cart[i];
     let selectedItem = document.createElement("div");
@@ -47,8 +50,15 @@ function disCart(id) {
     selectedItem.append(label);
     selectedItem.append(delBtn);
     cartItems.append(selectedItem);
+
+console.log(cart);
+
+    
   } //end for loop
 } //end cart
+
+
+//**********************localStorage Function**********************
 
 //**********************Delete Function**********************
 const deleteItem = (index) => {
