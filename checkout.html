@@ -23,17 +23,10 @@
 <br><br><div class="split right">
   <div class="centered">
 <div class="cart" id="cart">
-  <div class="title"><h2>CART</h2></div><hr/>
+  <div ><h2>CART</h2></div><hr/>
   <div id="title"></div>
   <div class="cart-math"></div>
-<!--Cart Checkout button redirects to checkout page-->
-  <button id="checkout" class="float-left submit-button" >Checkout</button>
-  <script type="text/javascript">
-      document.getElementById("checkout").onclick = function () {
-          location.href = "./checkout.html";
-      };
-  </script>
-  <br><br>
+
 </div>
 </div>
 </div>
@@ -52,7 +45,7 @@
 
 <!------------------Input Fields for Checkout------------------->
 <form action="/action_page.php">
-  <h2>Pick up name</h2>
+  <h2>Pick up name</h2><hr/>
     <label for="fname">First Name</label><br>
     <input type="text" id="fName" name="fName"
     placeholder=""><br><br>
@@ -129,7 +122,14 @@
 
 <!---------------------------Submit/Redirect to Confirmation -------------------------------------->
   
-      <input type="submit" value="Submit">
+<!--Cart Checkout button redirects to confirmation page-->
+<button id="checkout" class="float-left submit-button" >Checkout</button>
+<script type="text/javascript">
+    document.getElementById("checkout").onclick = function () {
+        location.href = "./confirmation.html";
+    };
+</script>
+<br><br>
   </form>
 </div>
 <!----------------------------------------------------------------->

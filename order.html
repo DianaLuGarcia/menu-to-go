@@ -62,7 +62,7 @@
             <option>Sauce on Side</option>
         </select>
     </div>
-    <button onclick = "addToCart(item2)">Add to Order</button><br><br>
+    <button onclick = "addToCart(item2)">Add to Order</button>
 </div>
 
 <!------------------------ 3rd item ----------------------------------------->    
@@ -86,7 +86,7 @@
         <div class="title">The Texan Burger<p>$10.99</p></div>
         <div>
             <label> Special Instructions: </label>
-            <select>
+            <select
                 <option></option>
                 <option>No Onions</option>
                 <option>No Tomato</option>
@@ -99,19 +99,21 @@
     </div>
 
 <!-------------------------- 5th item ------------------------------------------->    
-<div class="card" id="item3" name="5.99">
-    <img src="img/menu.item3.jpeg" class="photo" alt="menu-item">
-    <div class="title"><h4>Large Rosemary Fries</h4><p>$5.99</p></div>
-        <div>
-            <label> Special Instructions: </label>
-            <select>
-                <option></option>
-                <option>Extra Tomato</option>
-                <option>Extra Mayo</option>
-            </select>
-        </div>
-        <button onclick = "addToCart(item5)">Add to Order</button>
+<div class="card" id="item5" name="6.99">
+    <img src="img/menu.item5.jpeg" class="photo" alt="menu-item">
+    <div class="title"><h4>The BLT</h4><p>$6.99</p></div>
+    <!-- <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div> -->
+
+    <div>
+        <label> Special Instructions: </label>
+        <select>
+            <option></option>
+            <option>Extra Tomato</option>
+            <option>Extra Mayo</option>
+        </select>
     </div>
+    <button onclick = "addToCart(item5)">Add to Order</button><br><br>
+</div>
 
 <!---------------------------- 6th item ----------------------------------------->    
     <div class="card" id="item6" name="3.99">
@@ -139,7 +141,8 @@
     <div class="cart-math"></div>
 
 <!-----------Cart Checkout button redirects to checkout page--------------------------->
-    <button id="checkout" class="float-left submit-button" >Checkout</button><br><br>
+    <button id="checkout" class="float-left submit-button" >Checkout</button>
+    <button id="clearAll" class="float-left submit-button" >clearAll</button><br><br>
     <script type="text/javascript">
         document.getElementById("checkout").onclick = function () {
             location.href = "./cart.html";

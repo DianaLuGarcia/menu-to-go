@@ -16,5 +16,5 @@ let getPaymentDetails = () => {
   //     time.innerHTML = `<H1>${res.data.pickupTime}</H1>`;
   //   });
   // };
-  window.onload = getPaymentDetails;
+ 
   

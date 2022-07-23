@@ -30,6 +30,7 @@
     text-decoration: underline;
 }
 .header{
+    position:center;
     text-align: center;
     text-decoration: underline;
 }
@@ -68,4 +69,12 @@
 
   img{
     width: 50%;
+  }
+
+  body{
+    background-color:rgb(255, 169, 9)
+  }
+
+  h2{
+    color:#eeeeee
   }
