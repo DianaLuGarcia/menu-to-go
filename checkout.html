@@ -2,37 +2,41 @@
 <html>
 
 <head>
-<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="checkout.css" />
 <title>Minnie's Checkout</title>
 
-<!-----------------------Nav Bar----------------------------------->
-</head>
-<body>
-    <nav>
-        <ol>
-          <li class="crumb"><a href="./home.html">Home</a></li>
-          <li class="crumb"><a href="./order.html">Order</a></li>
-          <li class="crumb"><a href="./cart.html">Cart</a></li>
-        </ol>
-      </nav>
+
+    <!---------------------Nav Bar---------------------------------->
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="./home.html">Home</a>
+      <a href="./order.html">To Go Menu</a>
+      <a class="checkout" href="./checkout.html">Checkout</a>
+    </div>
       
-<h2>Checkout</h2>
+<div class = "header"><h2>Checkout</h2></div>
+
+<!------------------Split Right------------------->
 
 <!-----------------------CART-------------------------------->
+<br><br><div class="split right">
+  <div class="centered">
 <div class="cart" id="cart">
-  <div class="title">CART</div><hr/>
+  <div class="title"><h2>CART</h2></div><hr/>
   <div id="title"></div>
   <div class="cart-math"></div>
 <!--Cart Checkout button redirects to checkout page-->
   <button id="checkout" class="float-left submit-button" >Checkout</button>
   <script type="text/javascript">
       document.getElementById("checkout").onclick = function () {
-          location.href = "./cart.html";
+          location.href = "./checkout.html";
       };
   </script>
   <br><br>
 </div>
-
+</div>
+</div>
 
 <!---------------------TIME----------------------------------->
 <h4> Time is <span id="time"> </span></h4>
@@ -40,34 +44,11 @@
 <h3>Orders are ready within 30 minutes!</h3>
 
 
-<!------------------Pickup Time Dropdown------------------->
-<div>
-  <label> Pickup Time: </label>
-  <select>
-      <option></option>
-      <option>10:00AM</option>
-      <option>10:30AM</option>
-      <option>11:00AM</option>
-      <option>11:30AM</option>
-      <option>12:00PM</option>
-      <option>12:30PM</option>
-      <option>01:00PM</option>
-      <option>01:30PM</option>
-      <option>02:00PM</option>
-      <option>02:30PM</option>
-      <option>03:00PM</option>
-      <option>03:30PM</option>
-      <option>04:30PM</option>
-      <option>05:00PM</option>
-      <option>05:30PM</option>
-      <option>06:00PM</option>
-      <option>06:30PM</option>
-      <option>07:00PM</option>
-      <option>07:30PM</option>
-      <option>08:00PM</option>
-      <option>08:30PM</option>
-  </select>
-</div>
+<!------------------Split Left------------------->
+
+  <div class="split left">
+  <div class="centered">
+
 
 <!------------------Input Fields for Checkout------------------->
 <form action="/action_page.php">
@@ -83,7 +64,36 @@
     <label for="pNum">Phone Number</label><br>
     <input type="text" id="pNum" name="pNum"
     placeholder="(___)___-____"><br><br>
-
+<!------------------Pickup Time Dropdown------------------->
+<br><br>    
+<div>
+      <label> Pickup Time: </label>
+      <select>
+          <option></option>
+          <option>10:00AM</option>
+          <option>10:30AM</option>
+          <option>11:00AM</option>
+          <option>11:30AM</option>
+          <option>12:00PM</option>
+          <option>12:30PM</option>
+          <option>01:00PM</option>
+          <option>01:30PM</option>
+          <option>02:00PM</option>
+          <option>02:30PM</option>
+          <option>03:00PM</option>
+          <option>03:30PM</option>
+          <option>04:30PM</option>
+          <option>05:00PM</option>
+          <option>05:30PM</option>
+          <option>06:00PM</option>
+          <option>06:30PM</option>
+          <option>07:00PM</option>
+          <option>07:30PM</option>
+          <option>08:00PM</option>
+          <option>08:30PM</option>
+      </select>
+    </div>
+<br><br>
 <!--------------------------Payment Details-------------------------------------->  
     <img src="img/cc-icons.png" alt="cc-accepted" /><br><br>
     <label for="cardNum">Payment Card</label><br>
@@ -120,7 +130,7 @@
   
       <input type="submit" value="Submit">
   </form>
-
+</div>
 <!----------------------------------------------------------------->
 </body>
-<script type=""text/javascript" src="cart.js"></script>
+<script type=""text/javascript" src="checkout.js"></script>

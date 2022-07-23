@@ -1,0 +1,71 @@
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 3px;
+  }
+  /* Add a black background color to the top navigation */
+  .topnav {
+    background-color: tomato;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: rgb(229, 253, 223);
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: goldenrod;
+    color: aliceblue;
+  }
+.title {
+    text-align: center;
+    text-decoration: underline;
+}
+.header{
+    text-align: center;
+    text-decoration: underline;
+}
+  /* Split the screen in half */
+.split {
+    height: 100%;
+    width: 50%;
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
+    top: 8%;
+    overflow-y: scroll;
+    padding-top: 20px;
+  }
+  
+  /* Control the left side */
+  .left {
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    left: 0;
+    background-color: whitesmoke;
+    border-radius: 1%;
+    padding-left: 20px;
+  }
+  
+  /* Control the right side */
+  .right {
+    text-align: right;
+    align-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    right: 0;
+    background-color: #eeeeee;
+    border-radius: 1%;
+    padding-right: 20px;
+  }
+
+  img{
+    width: 50%;
+  }
