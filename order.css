@@ -1,0 +1,149 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #f58759;
+  overflow: hidden;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 3px;
+}
+/* Create a right-aligned (split) link inside the navigation bar */
+.topnav a.split {
+  float: right;
+  color: white;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgb(74, 136, 58);
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #83b97a;
+  color: aliceblue;
+}
+nav {
+  background-color: whitesmoke;
+  width: 100%;
+  border-bottom: 2px solid orange;
+}
+
+p.header {
+  font-weight: bold; /* makes all text in header class bold*/
+  color: rgb(254, 254, 254);
+  font-size: 40px;
+  margin: auto;
+  text-align: justify;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h2 {
+  color: #3a633e;
+}
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgba(0, 0, 0, 0.393); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.393); /* Black w/opacity/see-through */
+  color: rgb(193, 105, 23);
+  font-weight: bold;
+  font-size: 80px;
+  border: 10px solid #f1f1f1;
+  position: fixed; /* Stay fixed */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+/* Split the screen in half */
+.split {
+  width: 50%;
+  bottom: 0;
+  position: fixed;
+  z-index: 1;
+  top: 8%;
+  overflow-y: scroll;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  left: 0;
+  background-color: whitesmoke;
+  border-radius: 1%;
+}
+
+/* Control the right side */
+.right {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  right: 0;
+  background-color: #eeeeee;
+  border-radius: 1%;
+}
+/* .img.photo {
+  width: 200px;
+  border-radius: 50%;
+  text-shadow: 4cm;
+} */
+.cartImg > img {
+  width: 300px;
+  border-radius: 50%;
+  text-shadow: 4cm;
+}
+
+/* Style the image inside the centered container, if needed */
+.photo {
+  width: 500px;
+  border-radius: 5%;
+  align-items: flex-start;
+}
+
+.cart {
+  text-align: center;
+  border: 1px solid white;
+  overflow-y: scroll;
+  height: 100%;
+}
+.crumb {
+  margin-right: 2em;
+  display: inline;
+}
+
+ol {
+  padding-left: 0;
+}
+body {
+  z-index: 1;
+  padding-left: 0;
+  padding-right: 0;
+}
+.title {
+  color: #393232;
+}
+label {
+  font-size: smaller;
+}
+.margin {
+  margin: 20px 0px;
+}
+.cart-math {
+  text-align: right;
+  margin-right: 30px;
+}

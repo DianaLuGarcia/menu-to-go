@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link
+    rel="stylesheet" href="order.css" />
+    <script type=""text/javascript" src="addToCart.js" defer></script>
+<title>Minnies To Go Menu</title>
+</head>
+<body>
+<!------------------------Nav Bar-------------------------------->    
+<div class="topnav">
+    <a class="active" href="./order.html">To Go Menu</a>
+    <a href="./home.html">Home</a>
+    <a href="./cart.html">Checkout</a>
+  </div>
+    </nav>
+
+<!-- -------------------menu items ----------------------------------->
+
+<div class="split left">
+    <div class="centered">
+        <div class="title">   <h2>To Go Menu</h2></div>
+    
+<!-- -------------------menu items ----------------------------------->
+
+<div class="split left">
+    <div class="centered">
+        <div class="title">   <h2>To Go Menu</h2></div>
+<!--------------------- 1st item ------------------------------------->
+     <div class="card" id="item1" name="10.99">
+        <img src="img/menu.item1.jpeg" class="photo" alt="menu-item">
+        <div class="title"><h4>The Classic Burger</h4><p>$10.99</p></div>
+        
+        <div>
+            <label> Special Instructions: </label>
+            <select>
+                <option></option>
+                <option>No Onions</option>
+                <option>No Tomato</option>
+                <option>No Pickles</option>
+                <option>Lettuce Wrap</option>
+                <option>Sauce on Side</option>
+            </select>
+        </div>
+        <button onclick = "addToCart(item1)">Add to Order</button><br><br>
+    </div>
+
+<!--------------------- 2nd item--------------------------------------- -->
+<div class="card" id="item2" name="7.99">
+    <img src="img/menu.item2.jpeg" class="photo" alt="menu-item">
+    <div class="title"><h4>Bacon Wrapped Hot Dog</h4><p>$7.99</p></div>
+    <!-- <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div> -->
+    
+    <div>
+        <label> Special Instructions: </label>
+        <select>
+            <option></option>
+            <option>No Onions</option>
+            <option>No Tomato</option>
+            <option>No Pickles</option>
+            <option>Add Jalapeños</option>
+            <option>Sauce on Side</option>
+        </select>
+    </div>
+    <button onclick = "addToCart(item2)">Add to Order</button><br><br>
+</div>
+
+<!------------------------ 3rd item ----------------------------------------->    
+    <div class="card" id="item3" name="5.99">
+        <img src="img/menu.item3.jpeg" class="photo" alt="menu-item">
+        <div class="title">Large Rosemary Fries<p>$5.99</p></div>
+        <div>
+        <label> Sauce: </label>
+        <select>
+            <option></option>
+            <option>Fry Sauce</option>
+            <option>Ketchup</option>
+        </select>
+    </div>
+        <button onclick = "addToCart(item3)">Add to Order</button>
+    </div>
+
+<!-- ----------------------4th item ------------------------------------------->    
+    <div class="card" id="item4" name="10.99">
+        <img src="img/menu.item4.jpeg" class="photo" alt="menu-item">
+        <div class="title">The Texan Burger<p>$10.99</p></div>
+        <div>
+            <label> Special Instructions: </label>
+            <select>
+                <option></option>
+                <option>No Onions</option>
+                <option>No Tomato</option>
+                <option>No Pickles</option>
+                <option>Lettuce Wrap</option>
+                <option>Sauce on Side</option>
+            </select>
+        </div>
+        <button onclick = "addToCart(item4)">Add to Order</button>
+    </div>
+
+<!-------------------------- 5th item ------------------------------------------->    
+<div class="card" id="item3" name="5.99">
+    <img src="img/menu.item3.jpeg" class="photo" alt="menu-item">
+    <div class="title"><h4>Large Rosemary Fries</h4><p>$5.99</p></div>
+        <div>
+            <label> Special Instructions: </label>
+            <select>
+                <option></option>
+                <option>Extra Tomato</option>
+                <option>Extra Mayo</option>
+            </select>
+        </div>
+        <button onclick = "addToCart(item5)">Add to Order</button>
+    </div>
+
+<!---------------------------- 6th item ----------------------------------------->    
+    <div class="card" id="item6" name="3.99">
+        <img src="img/menu.item6.jpeg" class="photo" alt="menu-item">
+        <div class="title">Strawberry Limeade<p>$3.99</p></div>
+
+        <div>
+            <label> Special Instructions </label>
+            <select>
+
+                <option>N/A</option>
+
+            </select>
+        </div>
+        <button onclick = "addToCart(item6)">Add to Order</button>
+    </div>
+</div>
+
+<!-----------------------------Cart--------------------------------------------------->
+<div class="split right">
+    <div class="centered"></div>
+<div class="cart" id="cart">
+    <div class="title"><h3>CART</h3></div><hr/>
+    <br><p><div id="title"></div></p>
+    <div class="cart-math"></div>
+
+<!-----------Cart Checkout button redirects to checkout page--------------------------->
+    <button id="checkout" class="float-left submit-button" >Checkout</button><br><br>
+    <script type="text/javascript">
+        document.getElementById("checkout").onclick = function () {
+            location.href = "./cart.html";
+        };</script>
+
+    <br><br>
+</div>
+</div>
+</div>
+</body>
+</html>

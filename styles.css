@@ -1,0 +1,109 @@
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 3px;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: tomato;
+  overflow: hidden;
+  border-radius: 5px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgb(229, 253, 223);
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: goldenrod;
+  color: aliceblue;
+}
+
+body {
+  background-color: antiquewhite;
+  z-index: 1;
+}
+
+.card {
+  width: max-content;
+  text-align: center;
+  display: inline-block;
+  margin: 5px;
+}
+.card img {
+  width: 300px;
+  padding: 5px;
+}
+
+.cart {
+  width: 250px;
+  float: right;
+  text-align: center;
+  border: 1px solid black;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.cartImg > img {
+  width: 200px;
+}
+
+body {
+  z-index: 1;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.background {
+  border: 2px solid black;
+  padding: 1024px;
+  background: url(img/background.jpeg);
+  background-repeat: no-repeat;
+  z-index: 1;
+  min-height: 100%;
+  min-width: auto;
+}
+.crumb {
+  margin-right: 2em;
+  display: inline;
+}
+
+ol {
+  padding-left: 0;
+}
+
+nav {
+  background-color: whitesmoke;
+  width: 100%;
+  border-bottom: 2px solid orange;
+}
+
+p.header {
+  font-weight: bold; /* makes all text in header class bold*/
+  color: rgb(254, 254, 254);
+  font-size: 40px;
+  margin: auto;
+  text-align: justify;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+p.definition {
+  color: blanchedalmond;
+  font-size: 20px;
+  /* Place text in the middle of the image */
+  text-align: justify;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
