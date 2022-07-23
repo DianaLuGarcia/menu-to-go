@@ -39,7 +39,7 @@ function disCart() {
     label.innerText = item.children[2].children[0].innerText;
     select.innerText = item.children[2].children[1].value;
     console.log(cart.length);
-    
+
     //*************** adds delete button to cart *********************
 
     let delBtn = document.createElement("button");
@@ -48,17 +48,19 @@ function disCart() {
     delBtn.addEventListener("click", () => {
       deleteItem(i);
       localStorage.removeItem("item");
-      console.log("Cart items after delete:", cart)
+      console.log("Cart items after delete:", cart);
     });
 
     //*************** adds clearAll button to cart *********************
 
     let clearBtn = document.createElement("button");
+    clearBtn = document.getElementById("clearAll")
     clearBtn.classList.add("margin");
     clearBtn.innerText = "Clear All";
     clearBtn.addEventListener("click", () => {
       deleteItem(cart);
       localStorage.clear();
+      console.log("# of items in localStorage after clear all:", cart.length);
     });
 
     //*************** Append **********************
@@ -68,11 +70,11 @@ function disCart() {
     selectedItem.append(title);
     selectedItem.append(label);
     selectedItem.append(delBtn);
-    selectedItem.append(clearBtn);
+    //selectedItem.append(clearBtn);
     cartItems.append(selectedItem);
-    localStorage.setItem("item" + i, cart);
+    localStorage.setItem("cart" + i, cart);
     console.log("1. Cart:", cart);
-    console.log("2. localStorage:" + 1, localStorage.length);
+    console.log("2. localStorage:", localStorage.length);
   } //end for loop
 } //end cart
 
