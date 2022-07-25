@@ -2,19 +2,41 @@
 <html lang="en">
   <head>
     <script type="text/javascript" src="confirmation.js" defer></script>
+    <link rel="stylesheet" href="confirmation.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Order Confirmation</title>
   </head>
-  <body>
+  <body> 
+  <div class="topnav">
+    <a class="active" href="./home.html">Home</a>
+    <a href="./order.html">To Go Menu</a>
+  </div>
+    
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
       integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
+    <div class="bg-text">
+    <h1>Order Confirmed! </h1>
+    <p>Pickup Details:</p>
     <div class="first"></div>
+    <div class="last"></div>
+    <div class="phone"></div>
+    <p>Pickup Time:</p><div class="pickUpTime">
+
+    </div>
+
+
+  </div>
+  </p>
+      <!------------------Background image-------------------------->
+
+      <div id="background">
+        <img src="img/background.jpg" class="stretch" alt="" />
+      </div>
   </body>
 </html>

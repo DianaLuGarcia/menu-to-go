@@ -15,6 +15,7 @@
   text-decoration: none;
   font-size: 17px;
   border-radius: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /* Create a right-aligned (split) link inside the navigation bar */
 .topnav a.split {
@@ -37,7 +38,12 @@ nav {
   width: 100%;
   border-bottom: 2px solid orange;
 }
-
+.header{
+  color:#494949;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: oblique;
+  text-align: center;
+}
 p.header {
   font-weight: bold; /* makes all text in header class bold*/
   color: rgb(254, 254, 254);
@@ -50,7 +56,7 @@ p.header {
   transform: translate(-50%, -50%);
 }
 h2 {
-  color: #3a633e;
+  color: #393939;
 }
 /* Position text in the middle of the page/image */
 .bg-text {
@@ -94,7 +100,7 @@ h2 {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   right: 0;
-  background-color: #eeeeee;
+  background-color: #eeeeeebe;
   border-radius: 1%;
 }
 /* .img.photo {
@@ -133,9 +139,15 @@ body {
   z-index: 1;
   padding-left: 0;
   padding-right: 0;
+    background-color:rgb(0, 0, 0)
+
 }
 .title {
-  color: #393232;
+  color: #ffffff;
+float:inline-start
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    text-align: center;
 }
 label {
   font-size: smaller;
@@ -146,4 +158,14 @@ label {
 .cart-math {
   text-align: right;
   margin-right: 30px;
+}
+
+.WebContainer{
+  width: 100%;
+  height: auto;
+}
+.articles{
+  width:90%; /*Takes 90% width from WebContainer*/
+  height: auto;
+  margin: auto;
 }

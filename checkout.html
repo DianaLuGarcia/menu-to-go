@@ -6,7 +6,7 @@
 <title>Minny's Checkout</title>
 
 
-    <!---------------------Nav Bar---------------------------------->
+    <!---------------------Nav Bar--------------------------->
   </head>
   <body>
     <div class="topnav">
@@ -17,33 +17,36 @@
       
 <div class = "header"><h2>Checkout</h2></div>
 
-<!------------------Split Right------------------->
+<!------------------Split Right------------------------------>
 
 <!-----------------------CART-------------------------------->
 <br><br><div class="split right">
   <div class="centered">
 <div class="cart" id="cart">
-  <div ><h2>CART</h2></div><hr/>
-  <div id="title"></div>
-  <div class="cart-math"></div>
+  <div ><h2>CART</h2></div></div><hr>
+  <div id="title">
+
+  </div>
+  <div class="cart-math">$</div>
 
 </div>
 </div>
 </div>
 
-<!---------------------TIME----------------------------------->
-<h4> Time is <span id="time"> </span></h4>
-
-<h3>Orders are ready within 30 minutes!</h3>
+<!---------------------TIME------------------------------------>
 
 
-<!------------------Split Left------------------->
+
+
+
+<!------------------Split Left------------------------------->
 
   <div class="split left">
   <div class="centered">
 
 
-<!------------------Input Fields for Checkout------------------->
+<!------------------Input Fields for Checkout---------------->
+
 <form action="/action_page.php">
   <h2>Pick up name</h2><hr/>
     <label for="fname">First Name</label><br>
@@ -56,12 +59,11 @@
 
     <label for="pNum">Phone Number</label><br>
     <input type="text" id="pNum" name="pNum"
-    placeholder="(___)___-____"><br><br>
+    placeholder="(___) ___-____"><br><br>
 <!------------------Pickup Time Dropdown------------------->
-<br><br>    
-<div>
-      <label> Pickup Time: </label>
-      <select>
+
+      <label for="pTime"> Pickup Time: </label>
+      <select id = "pTime" name="pTime">
           <option></option>
           <option>10:00AM</option>
           <option>10:30AM</option>
@@ -119,19 +121,14 @@
   
       <select id="state" name="states"></select><br><br>
     </div>
-
+  </form>
 <!---------------------------Submit/Redirect to Confirmation -------------------------------------->
   
 <!--Cart Checkout button redirects to confirmation page-->
 <button id="checkout" class="float-left submit-button" >Checkout</button>
-<script type="text/javascript">
-    document.getElementById("checkout").onclick = function () {
-        location.href = "./confirmation.html";
-    };
-</script>
 <br><br>
-  </form>
 </div>
 <!----------------------------------------------------------------->
 </body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script type=""text/javascript" src="checkout.js"></script>

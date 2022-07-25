@@ -4,15 +4,28 @@ let cart = [];
 
 //************** Adds Item + Price to cart **************************
 
-function addToCart(item) {
+function addToCart(item, localStorageItem) {
   cart.push(item);
   disCart();
   disPrice();
+  let ourItems = localStorage.getItem("cartItems");
+  if (!ourItems) {
+    ourItems = [];
+  } else {
+    console.log("cartItems:", ourItems);
+    ourItems = JSON.parse(ourItems);
+  }
+  ourItems.push(localStorageItem);
+  localStorage.setItem("cartItems", JSON.stringify(ourItems));
+  // console.log("1. Cart:", cart);
+  console.log(ourItems);
+
+  // console.log("2. localStorage:", ourItems.length);
 }
 
 const cartObj = {}; //Object for localStorage
 
-function disCart() {
+function disCart(id) {
   let cartItems = document.getElementById("title");
   //clears items in cart when adding new (to avoid duplicates)
   cartItems.innerHTML = "";
@@ -46,7 +59,8 @@ function disCart() {
     delBtn.classList.add("margin");
     delBtn.innerText = "Delete";
     delBtn.addEventListener("click", () => {
-      deleteItem(i);
+      deleteItem(cart[i].innerText.split("\n")[0]);
+      console.log("delete Button:", cart, i);
       localStorage.removeItem("item");
       console.log("Cart items after delete:", cart);
     });
@@ -54,7 +68,7 @@ function disCart() {
     //*************** adds clearAll button to cart *********************
 
     let clearBtn = document.createElement("button");
-    clearBtn = document.getElementById("clearAll")
+    clearBtn = document.getElementById("clearAll");
     clearBtn.classList.add("margin");
     clearBtn.innerText = "Clear All";
     clearBtn.addEventListener("click", () => {
@@ -72,9 +86,6 @@ function disCart() {
     selectedItem.append(delBtn);
     //selectedItem.append(clearBtn);
     cartItems.append(selectedItem);
-    localStorage.setItem("cart" + i, cart);
-    console.log("1. Cart:", cart);
-    console.log("2. localStorage:", localStorage.length);
   } //end for loop
 } //end cart
 
@@ -82,10 +93,29 @@ function disCart() {
 
 //**********************Delete Function**********************
 
-const deleteItem = (index) => {
+const deleteItem = (name) => {
+  let index = cart.findIndex((item) => {
+    return item.name === name;
+  });
+
   cart.splice(index, 1);
   disCart(cart);
   disPrice(cart);
+  let cartDelObj = localStorage.getItem("cartItems");
+  console.log(cartDelObj);
+
+  cartDelObj = JSON.parse(cartDelObj);
+  index = cartDelObj.findIndex((item) => {
+    console.log(item, name);
+    return item?.name === name;
+  });
+  if (cartDelObj.length > 1) {
+    console.log(index);
+    cartDelObj = cartDelObj.splice(index, 1);
+  } else {
+    cartDelObj = [];
+  }
+  localStorage.setItem("cartItems", JSON.stringify(cartDelObj));
 };
 
 function disPrice() {
@@ -110,3 +140,5 @@ function disPrice() {
   cartMath.append(h3);
   console.log("3. Subtotal:", subtotal.toFixed(2));
 }
+
+localStorage

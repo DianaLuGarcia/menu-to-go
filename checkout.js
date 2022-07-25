@@ -1,7 +1,41 @@
-let today = new Date();
-document.getElementById("time").innerHTML = today;
 
-console.log("test1");
+let cartMath = document.querySelector(".cart-math");
+const cartItems = JSON.parse(localStorage.getItem("cartItems"));
+console.log(cartItems);
+
+function grabCart() {
+  for (let i = 0; i < cartItems.length; i++) {
+    let item = cartItems[i];
+    let selectedItem = document.createElement("div");
+    let title = document.createElement("div");
+    let img = document.createElement("img");
+    title.innerHTML = `<h4>${item.name}</h4><p>${item.price}</p>`;
+    selectedItem.classList.add("cartImg");
+    img.setAttribute("src", item.image);
+    selectedItem.append(img);
+    selectedItem.append(title);
+    let itemContainer = document.getElementById("title");
+    itemContainer.append(selectedItem);
+  }
+  let total = 0;
+  for (j = 0; j < cartItems.length; j++) {
+    total += +cartItems[j].price;
+  }
+
+  let tax = total * 0.047;
+  let subtotal = total + tax;
+  cartMath.innerHTML = "";
+  let h1 = document.createElement("h1");
+  let h2 = document.createElement("h1");
+  let h3 = document.createElement("h1");
+  h1.innerText = `Total: $ ${total.toFixed(2)}`;
+  h2.innerText = `Tax: $ ${tax.toFixed(2)}`;
+  h3.innerText = `Subtotal: $ ${subtotal.toFixed(2)}`;
+  cartMath.append(h1);
+  cartMath.append(h2);
+  cartMath.append(h3);
+}
+
 //****************** US STATES ************************ */
 let usStates = [
   { name: " ", abbreviation: "" },
@@ -73,16 +107,19 @@ stateDrop();
 //****************** Send payment info to Payment endpoint ********************** */
 
 let submitDetails = () => {
-  let pickUpTime = document.querySelector(".pickUpTimeSelected").value;
+  let phoneNumber = document.querySelector("#pNum").value;
   let firstName = document.querySelector("#fName").value;
   let lastName = document.querySelector("#lName").value;
+  let pickUpTime = document.querySelector("#pTime").value;
+
   axios
     .post("http://localhost:4000/api/payment", {
-      paymentInfo: { pickUpTime, firstName, lastName },
+      paymentInfo: { phoneNumber, firstName, lastName,pickUpTime  },
     })
     .then(() => {
       location.href = "./confirmation.html"; //redirects to confirmation page on submit click
     });
 };
 
-document.querySelector(".submit").onclick = submitDetails;
+document.querySelector("#checkout").onclick = submitDetails;
+grabCart();
