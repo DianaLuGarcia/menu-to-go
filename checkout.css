@@ -1,105 +1,108 @@
 /* Style the links inside the navigation bar */
 .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    border-radius: 3px;
-  }
-  /* Add a black background color to the top navigation */
-  .topnav {
-    background-color: #f58759;
-    overflow: hidden;
-    border-radius: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: rgb(229, 253, 223);
-    color: black;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color:  #83b97a;
-    color: aliceblue;
-  }
-.title {
-    text-align: center;
-    text-decoration: underline;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 3px;
 }
-.header{
-    color:#494949;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: oblique;
-    text-align: center;
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: cadetblue;
+  border-bottom: 5px solid rgb(252, 192, 81);
+  overflow: hidden;
+  border-radius: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #83b97a;
+  color: black;
 }
 
-h2{
+div .title {
+  text-align: center;
+  text-decoration: underline;
+  color: #494949;
+}
+.title {
+  text-align: center;
+  text-decoration: underline;
+  color: #494949;
+}
+.header {
+  color: #494949;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: oblique;
+  text-align: center;
+}
+
+h2 {
   margin-block-start: 0.2em;
   margin-block-end: 0.3em;
   margin-inline-start: 0.2em;
   margin-inline-end: 0.2em;
+  color: #494949;
 }
-  /* Split the screen in half */
+/* Split the screen in half */
 .split {
-    height: 100%;
-    width: 50%;
-    bottom: 0;
-    position: fixed;
-    z-index: 1;
-    top: 8%;
-    overflow-y: scroll;
-    padding-top: 20px;
-  
-  }
-  
-  /* Control the left side */
-  .left {
-    text-align: left;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    left: 0;
-    background-color: whitesmoke;
-    border-radius: 1%;
-    padding-left: 20px;
-    margin: 5;
-  }
-  
-  /* Control the right side */
-  .right {
-    text-align: right;
-    align-content: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    right: 0;
-    background-color: #eeeeeebe;
-    border-right:   10%;
-    padding-right: 20px;
-    margin: 5;
-  }
-
-  img{
-
-    width: 300px;
-    border-radius: 50%;
-    text-shadow: 4cm;
-  }
-
-
-  body{
-    background-color:rgba(255, 196, 120, 0.858)
-  }
-
-  .WebContainer{
-    width: auto;
-    height: 80%;
+  width: 50%;
+  bottom: 0;
+  position: fixed;
+  z-index: 1;
+  top: 8%;
+  overflow-y: scroll;
+  padding-top: 20px;
 }
-.articles{
-    width:auto; /*Takes 90% width from WebContainer*/
-    height: 80%;
-    margin: auto;
+
+/* Control the left side */
+.left {
+  padding-top: 20px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  left: 0;
+  background-color: #f2f2f2;
+border-radius: 2%;
+  padding-left: 20px;
+  margin: 5;
 }
-hr {
-  color:#f2f2f2;
+
+/* Control the right side */
+.right {
+  text-align: right;
+  align-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  right: 0;
+  border-radius: 2%;
+  background-color: rgb(234, 234, 234);
+  padding-right: 20px;
+  margin: 5;
+}
+.cc{
+  width: 300px;
+  border-color: null;
+  border-radius: null;
+  border-color: #f2f2f2;
+}
+
+img {
+  width: 300px;
+  text-shadow: 4cm;
+  border: 5px solid;
+  border-color: cadetblue;
+  border-radius: 30%;
+}
+
+
+
+.WebContainer {
+  width: auto;
+  height: 80%;
+}
+.articles {
+  width: auto; /*Takes 90% width from WebContainer*/
+  height: 80%;
+  margin: auto;
 }

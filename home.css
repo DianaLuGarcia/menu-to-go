@@ -40,8 +40,8 @@ p.definition {
 }
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #f58759;
-  border-bottom: 2px solid orange;
+  background-color: cadetblue;;
+  border-bottom: 5px solid orange;
   overflow: hidden;
   width: 150%;
   height: auto;
@@ -65,11 +65,6 @@ p.definition {
   color: black;
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: rgb(233, 120, 63);
-  color: aliceblue;
-}
 checkout {
   float: right;
   color: #f2f2f2;

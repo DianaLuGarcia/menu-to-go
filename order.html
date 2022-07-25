@@ -9,7 +9,7 @@
 <body>
 <!------------------------Nav Bar-------------------------------->    
 <div class="topnav">
-    <a class="active" href="./order.html">To Go Menu</a>
+    <a class="active" href="./order.html">Pickup Menu</a>
     <a href="./home.html">Home</a>
     <a href="./checkout.html">Checkout</a>
   </div>
@@ -29,7 +29,8 @@
 <!--------------------- 1st item ------------------------------------->
      <div class="card" id="item1" name="10.99">
         <img src="img/menu.item1.jpeg" class="photo" alt="menu-item">
-        <div class="title"><h4>The Classic Burger</h4><p>10.99</p></div>
+        <div class="title"><h4>The Classic Burger</h4>
+        <p style="display:inline">$</p><p style="margin: 0; display: inline;" align="right">10.99</p></div>
         
         <div class= "instructions">
             <label> Special Instructions: </label>
@@ -41,7 +42,7 @@
                 <option>Lettuce Wrap</option>
                 <option>Sauce on Side</option>
             </select>
-        </div>
+        </div><br>
         <!-- <button onclick = "addToCart(item1)">Add to Order</button> -->
         <button onclick = "addToCart(item1, storeObj = {
             image: 'img/menu.item1.jpeg',
@@ -53,8 +54,8 @@
 <!--------------------- 2nd item--------------------------------------- -->
 <div class="card" id="item2" name="7.99">
     <img src="img/menu.item2.jpeg" class="photo" alt="menu-item">
-    <div class="title"><h4>Bacon Wrapped Hot Dog</h4><p>7.99</p></div>
-    <!-- <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div> -->
+    <div class="title"><h4>Bacon Wrapped Hot Dog</h4>
+    <p style="display:inline">$</p><p style="margin: 0; display: inline;" align="right">6.99</p></div>
     
     <div>
         <label> Special Instructions: </label>
@@ -66,7 +67,7 @@
             <option>Add Jalapeños</option>
             <option>Sauce on Side</option>
         </select>
-    </div>
+    </div><br>
     <button onclick = "addToCart(item2, storeObj = {
         image: 'img/menu.item2.jpeg',
         name: 'Bacon Wrapped Hot Dog',
@@ -77,7 +78,8 @@
 <!------------------------ 3rd item ----------------------------------------->    
     <div class="card" id="item3" name="5.99">
         <img src="img/menu.item3.jpeg" class="photo" alt="menu-item">
-        <div class="title">Large Rosemary Fries<p>5.99</p></div>
+        <div class="title"><h4>Large Rosemary Fries</h4>
+        <p style="display:inline">$</p><p style="margin: 0; display: inline;" align="right">5.99</p></div>
         <div class = "instructions">
         <label> Sauce: </label>
         <select>
@@ -85,7 +87,7 @@
             <option>Fry Sauce</option>
             <option>Ketchup</option>
         </select>
-    </div>
+    </div><br>
         <button onclick = "addToCart(item3, storeObj = {
             image: 'img/menu.item2.jpeg',
             name: 'Large Rosemary Fries',
@@ -96,7 +98,8 @@
 <!-- ----------------------4th item ------------------------------------------->    
     <div class="card" id="item4" name="10.99">
         <img src="img/menu.item4.jpeg" class="photo" alt="menu-item">
-        <div class="title">The Texan Burger<p>10.99</p></div>
+        <div class="title"><h4>The Texan Burger</h4>
+        <p style="display:inline">$</p><p style="margin: 0; display: inline;" align="right">10.99</p></div>
         <div>
             <label> Special Instructions: </label>
             <select
@@ -118,8 +121,7 @@
 <!-------------------------- 5th item ------------------------------------------->    
 <div class="card" id="item5" name="6.99">
     <img src="img/menu.item5.jpeg" class="photo" alt="menu-item">
-    <div class="title"><h4>The BLT</h4><p>6.99</p></div>
-    <!-- <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div> -->
+    <div class="title"><h4>The BLT</h4><p style="display:inline">$</p><p style="margin: 0; display: inline;" align="right">6.99</p></div>
 
     <div>
         <label> Special Instructions: </label>
@@ -128,7 +130,7 @@
             <option>Extra Tomato</option>
             <option>Extra Mayo</option>
         </select>
-    </div>
+    </div><br>
     <button onclick = "addToCart(item5, storeObj = {
         image: 'img/menu.item5.jpeg',
         name: 'The BLT',
@@ -139,7 +141,7 @@
 <!---------------------------- 6th item ----------------------------------------->    
     <div class="card" id="item6" name="3.99">
         <img src="img/menu.item6.jpeg" class="photo" alt="menu-item">
-        <div class="title">Strawberry Limeade<p>3.99</p></div>
+        <div class="title"><h4>Strawberry Limeade</h4><p $ style="display:inline">$</p><p style="margin: 0; display: inline;" align="right">3.99</p></div>
 
         <div>
             <label> Special Instructions </label>
@@ -148,7 +150,7 @@
                 <option>N/A</option>
 
             </select>
-        </div>
+        </div><br>
         <button onclick = "addToCart(item6, storeObj = {
             image: 'img/menu.item6.jpeg',
             name: 'Strawberry Limeade',
@@ -161,7 +163,7 @@
     <div class="centered"></div>
 <div class="cart" id="cart">
     <div class="title"><h2>CART</h2></div>
-    <br><p><div id="title"></div></p>
+    <p><div id="title"></div></p>
     <div class="cart-math"></div>
 
 <!-----------Cart Checkout button redirects to checkout page--------------------------->

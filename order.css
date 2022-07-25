@@ -1,6 +1,7 @@
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #f58759;
+  background-color: cadetblue;
+  border-bottom: 5px solid rgb(252, 192, 81);
   overflow: hidden;
   border-radius: 5px;
   z-index: 10;
@@ -17,64 +18,26 @@
   border-radius: 3px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-/* Create a right-aligned (split) link inside the navigation bar */
-.topnav a.split {
-  float: right;
-  color: white;
-}
+
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: rgb(74, 136, 58);
+  background-color: #83b97a;
   color: black;
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #83b97a;
-  color: aliceblue;
-}
-nav {
-  background-color: whitesmoke;
-  width: 100%;
-  border-bottom: 2px solid orange;
-}
-.header{
-  color:#494949;
+.header {
+  color: #494949;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: oblique;
   text-align: center;
 }
-p.header {
-  font-weight: bold; /* makes all text in header class bold*/
-  color: rgb(254, 254, 254);
-  font-size: 40px;
-  margin: auto;
-  text-align: justify;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+
 h2 {
-  color: #393939;
+  color:cadetblue;
+  font-size: 30px;
+  font-kerning:unset;
 }
-/* Position text in the middle of the page/image */
-.bg-text {
-  background-color: rgba(0, 0, 0, 0.393); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.393); /* Black w/opacity/see-through */
-  color: rgb(193, 105, 23);
-  font-weight: bold;
-  font-size: 80px;
-  border: 10px solid #f1f1f1;
-  position: fixed; /* Stay fixed */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 300px;
-  padding: 20px;
-  text-align: center;
-}
+
 /* Split the screen in half */
 .split {
   width: 50%;
@@ -91,39 +54,42 @@ h2 {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   left: 0;
+  border-radius: 2%;
   background-color: whitesmoke;
-  border-radius: 1%;
 }
 
 /* Control the right side */
 .right {
-  text-align: center;
+  text-align: right;
+  align-content: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   right: 0;
-  background-color: #eeeeeebe;
-  border-radius: 1%;
+  border-radius: 2%;
+  background-color: rgb(234, 234, 234);
+  padding-right: 20px;
+  margin: 5;
 }
-/* .img.photo {
-  width: 200px;
-  border-radius: 50%;
-  text-shadow: 4cm;
-} */
+
 .cartImg > img {
   width: 300px;
-  border-radius: 50%;
-  text-shadow: 4cm;
+  border-radius: 40%;
+  border: 5px solid;
+  border-color: cadetblue;
 }
 
 /* Style the image inside the centered container, if needed */
 .photo {
   width: 500px;
-  border-radius: 5%;
+
   align-items: flex-start;
+  border: 5px solid;
+  border-color: rgb(252, 192, 81);
+  border-radius: 30%;
 }
 
 .cart {
   text-align: center;
-  border: 1px solid white;
+  font-kerning: inherit;
   overflow-y: scroll;
   height: 100%;
 }
@@ -139,15 +105,13 @@ body {
   z-index: 1;
   padding-left: 0;
   padding-right: 0;
-    background-color:rgb(0, 0, 0)
-
+  background-color: rgb(245, 242, 242);
 }
 .title {
-  color: #ffffff;
-float:inline-start
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: oblique;
-    text-align: center;
+  color: #494949;
+  float: inline-start;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: oblique;
 }
 label {
   font-size: smaller;
@@ -160,12 +124,12 @@ label {
   margin-right: 30px;
 }
 
-.WebContainer{
+.WebContainer {
   width: 100%;
   height: auto;
 }
-.articles{
-  width:90%; /*Takes 90% width from WebContainer*/
+.articles {
+  width: 90%; /*Takes 90% width from WebContainer*/
   height: auto;
   margin: auto;
 }

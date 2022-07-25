@@ -141,4 +141,4 @@ function disPrice() {
   console.log("3. Subtotal:", subtotal.toFixed(2));
 }
 
-localStorage
+

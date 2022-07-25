@@ -13,8 +13,8 @@
   }
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #f58759;
-  border-bottom: 2px solid orange;
+  background-color: cadetblue;
+  border-bottom: 5px solid orange;
   overflow: hidden;
   width: 150%;
   height: auto;
@@ -38,11 +38,6 @@
   color: black;
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: rgb(233, 120, 63);
-  color: aliceblue;
-}
 
 .bg-text {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -51,7 +46,7 @@
   color: white;
   font-weight: bold;
   font-size: 17px;
-  border: 10px solid #f1f1f1;
+  border: 10px solid orange;
   position: fixed; /* Stay fixed */
   top: 50%;
   left: 50%;
