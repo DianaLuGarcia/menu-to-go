@@ -1,3 +1,5 @@
+Diana Garcia 7/24/22
+
 TITLE: Minny's Grill - Menu/Order - Vanilla JS
 
 DESCRIPTION: This web app is a first for me, it had the 
